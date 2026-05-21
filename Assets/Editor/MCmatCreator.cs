@@ -150,7 +150,7 @@ public class MCmatCreator : EditorWindow
             assetNames = assetPaths.ToArray()
         };
 
-        string buildFolder = "Assets/McMats";+
+        string buildFolder = "Assets/McMats";
 
         if (!Directory.Exists(buildFolder)) Directory.CreateDirectory(buildFolder);
 
