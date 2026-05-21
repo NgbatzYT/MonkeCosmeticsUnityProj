@@ -17,7 +17,7 @@ public class MCmatCreator : EditorWindow
         public bool moddedOnly;
     }
 
-    private List<MaterialEntry> materials = new List<MaterialEntry>();
+    private List<MaterialThingy> materials = new List<MaterialThingy>();
     private Vector2 scroll;
 
     [MenuItem("Tools/Material Creator")]
@@ -28,7 +28,7 @@ public class MCmatCreator : EditorWindow
 
     private void OnEnable()
     {
-        if (materials.Count == 0) materials.Add(new MaterialEntry());
+        if (materials.Count == 0) materials.Add(new MaterialThingy());
     }
 
     private void OnGUI()
@@ -54,7 +54,7 @@ public class MCmatCreator : EditorWindow
 
     private void DrawMaterialThingy(int index)
     {
-        MaterialEntry entry = materials[index];
+        MaterialThingy entry = materials[index];
 
         EditorGUILayout.BeginVertical("box");
 
@@ -107,7 +107,7 @@ public class MCmatCreator : EditorWindow
 
         for (int i = 0; i < materials.Count; i++)
         {
-            MaterialEntry entry = materials[i];
+            MaterialThingy entry = materials[i];
 
             if (entry.material == null)
             {
