@@ -3,7 +3,7 @@ using UnityEditor;
 using System.IO;
 using System;
 using System.Collections.Generic;
-using MonkeCosmetics.Editor.Cosmetic;
+using MonkeCosmetics.Cosmetic;
 
 public class MCmatCreator : EditorWindow
 {
