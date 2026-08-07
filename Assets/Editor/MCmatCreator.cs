@@ -157,7 +157,7 @@ public class MCmatCreator : EditorWindow
         BuildPipeline.BuildAssetBundles(buildFolder, new[] { build }, BuildAssetBundleOptions.None, EditorUserBuildSettings.activeBuildTarget);
 
         string originalBundlePath = Path.Combine(buildFolder, bundleName);
-        string mcMatPath = Path.Combine(buildFolder, bundleName + ".MCmat");
+        string mcMatPath = Path.Combine(buildFolder, bundleName + ".MCcosmetic");
 
         if (File.Exists(mcMatPath)) File.Delete(mcMatPath);
 
